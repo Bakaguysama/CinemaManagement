@@ -56,7 +56,9 @@
             // guna2Panel3
             // 
             this.guna2Panel3.AutoRoundedCorners = true;
-            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.guna2Panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2Panel3.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel3.BorderRadius = 98;
             this.guna2Panel3.Controls.Add(this.lbl_UserName);
             this.guna2Panel3.Controls.Add(this.guna2Button_CaiDat);
@@ -92,7 +94,8 @@
             // 
             // guna2Button_CaiDat
             // 
-            this.guna2Button_CaiDat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button_CaiDat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_CaiDat.Animated = true;
             this.guna2Button_CaiDat.AutoRoundedCorners = true;
             this.guna2Button_CaiDat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -141,7 +144,6 @@
             // 
             // guna2Button_TrangChu
             // 
-            this.guna2Button_TrangChu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_TrangChu.Animated = true;
             this.guna2Button_TrangChu.AutoRoundedCorners = true;
             this.guna2Button_TrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -178,7 +180,7 @@
             // 
             // guna2Button_CaNhan
             // 
-            this.guna2Button_CaNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button_CaNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_CaNhan.Animated = true;
             this.guna2Button_CaNhan.AutoRoundedCorners = true;
             this.guna2Button_CaNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -210,7 +212,8 @@
             // 
             // guna2Button_Phim
             // 
-            this.guna2Button_Phim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button_Phim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_Phim.Animated = true;
             this.guna2Button_Phim.AutoRoundedCorners = true;
             this.guna2Button_Phim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -247,7 +250,8 @@
             // 
             // guna2Button_ThucAnDoUong
             // 
-            this.guna2Button_ThucAnDoUong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button_ThucAnDoUong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_ThucAnDoUong.Animated = true;
             this.guna2Button_ThucAnDoUong.AutoRoundedCorners = true;
             this.guna2Button_ThucAnDoUong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -283,7 +287,8 @@
             // 
             // guna2Button_DatVe
             // 
-            this.guna2Button_DatVe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button_DatVe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_DatVe.Animated = true;
             this.guna2Button_DatVe.AutoRoundedCorners = true;
             this.guna2Button_DatVe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -320,7 +325,8 @@
             // 
             // guna2Button_RapChieu
             // 
-            this.guna2Button_RapChieu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button_RapChieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button_RapChieu.Animated = true;
             this.guna2Button_RapChieu.AutoRoundedCorners = true;
             this.guna2Button_RapChieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -356,7 +362,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.guna2Panel1.BorderRadius = 2;
             this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
@@ -375,7 +381,7 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::DoAn.Properties.Resources.Colorful_Retro_Illustrative_Tasty_Popcorn_Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(21, 10);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 10);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(73, 53);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -410,12 +416,13 @@
             // 
             // panel_Container
             // 
-            this.panel_Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.panel_Container.BackColor = System.Drawing.Color.Transparent;
             this.panel_Container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Container.Location = new System.Drawing.Point(198, 69);
             this.panel_Container.Name = "panel_Container";
             this.panel_Container.Size = new System.Drawing.Size(805, 588);
             this.panel_Container.TabIndex = 4;
+            this.panel_Container.UseTransparentBackground = true;
             // 
             // guna2DragControl1
             // 
@@ -437,8 +444,8 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1003, 657);
             this.Controls.Add(this.panel_Container);
             this.Controls.Add(this.guna2Panel1);

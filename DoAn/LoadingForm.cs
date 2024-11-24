@@ -28,6 +28,8 @@ namespace DoAn
                 this.Close();
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
+                //Test test = new Test();
+                //test.Show();
             }
             else
             {

@@ -62,6 +62,15 @@ namespace DoAn
             chart1.ChartAreas[0].CursorX.IsUserSelectionEnabled = true; // Bật chọn zoom trên trục X
             chart1.ChartAreas[0].CursorY.IsUserEnabled = true;    // Bật con trỏ trục Y
             chart1.ChartAreas[0].CursorY.IsUserSelectionEnabled = true; // Bật chọn zoom trên trục Y
+
+            chart1.ChartAreas[0].CursorX.IsUserEnabled = false;
+            chart1.ChartAreas[0].CursorX.IsUserSelectionEnabled = false;
+            chart1.ChartAreas[0].CursorY.IsUserEnabled = false;
+            chart1.ChartAreas[0].CursorY.IsUserSelectionEnabled = false;
+
+            chart1.ChartAreas[0].AxisX.ScaleView.Zoomable = false;
+            chart1.ChartAreas[0].AxisY.ScaleView.Zoomable = false;
+
             // Thêm tiêu đề cho biểu đồ
             chart1.Titles.Clear();
             chart1.Titles.Add("Top 5 phim có doanh thu cao nhất");
@@ -70,6 +79,12 @@ namespace DoAn
 
         private void Overview_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void guna2Button_TuyChinh_Click(object sender, EventArgs e)
+        {
+
 
         }
     }

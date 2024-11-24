@@ -10,16 +10,14 @@ using System.Windows.Forms;
 
 namespace DoAn
 {
-    public partial class signupForm : Form
+    public partial class LogInForm : Form
     {
-
-        public signupForm()
+        public LogInForm()
         {
             InitializeComponent();
-            
         }
 
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        private void LogInForm_Load(object sender, EventArgs e)
         {
 
         }
@@ -30,33 +28,33 @@ namespace DoAn
             {
                 // Đặt PasswordChar là '\0' (kí tự null) để hiển thị mật khẩu
                 guna2TextBox_signupForm_Password.PasswordChar = '\0';
-                guna2TextBox_signupForm_ConfirmPassword.PasswordChar = '\0';
+                
             }
             else
             {
                 // Đặt lại PasswordChar thành kí tự che dấu (ví dụ: '●')
                 guna2TextBox_signupForm_Password.PasswordChar = '●';
-                guna2TextBox_signupForm_ConfirmPassword.PasswordChar = '●';
+                
             }
-        }
-
-        private void guna2Button_signupForm_Signin_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            LogInForm logInForm = new LogInForm();
-            logInForm.Show();
-        }
-
-        private void guna2ControlBox2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void guna2Button_signupForm_Register_Click(object sender, EventArgs e)
         {
             this.Hide();
+            signupForm signupForm = new signupForm();
+            signupForm.Show();
+        }
+
+        private void guna2Button_signupForm_Signin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
             LoadingForm loadingForm = new LoadingForm();
             loadingForm.Show();
+        }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
