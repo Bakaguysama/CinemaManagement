@@ -55,8 +55,7 @@
             this.guna2Panel5.BorderRadius = 122;
             this.guna2Panel5.Controls.Add(this.guna2DataGridView1);
             this.guna2Panel5.Controls.Add(this.label10);
-            this.guna2Panel5.Controls.Add(this.guna2Panel4);
-            this.guna2Panel5.Location = new System.Drawing.Point(12, 340);
+            this.guna2Panel5.Location = new System.Drawing.Point(12, 342);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(790, 246);
             this.guna2Panel5.TabIndex = 16;
@@ -156,9 +155,9 @@
             this.guna2Panel4.Controls.Add(this.label2);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
             this.guna2Panel4.Controls.Add(this.label5);
-            this.guna2Panel4.Location = new System.Drawing.Point(572, 26);
+            this.guna2Panel4.Location = new System.Drawing.Point(12, 12);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(392, 199);
+            this.guna2Panel4.Size = new System.Drawing.Size(385, 199);
             this.guna2Panel4.TabIndex = 17;
             // 
             // label2
@@ -203,6 +202,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 588);
             this.Controls.Add(this.guna2Panel5);
+            this.Controls.Add(this.guna2Panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Movie";
             this.Text = "Movie";

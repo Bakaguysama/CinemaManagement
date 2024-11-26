@@ -59,5 +59,26 @@ namespace DoAn
         {
 
         }
+
+        private void addStaff_btn_Click(object sender, EventArgs e)
+        {
+            addControl(new Staff());
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_Container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button_ThucAnDoUong_Click(object sender, EventArgs e)
+        {
+            addControl(new FoodAndDrink());
+
+        }
     }
 }

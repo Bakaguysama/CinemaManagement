@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.addStaff_btn = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_UserName = new System.Windows.Forms.Label();
             this.guna2Button_CaiDat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -38,7 +39,6 @@
             this.guna2Button_Phim = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button_ThucAnDoUong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button_DatVe = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button_RapChieu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -60,6 +60,7 @@
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.guna2Panel3.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel3.BorderRadius = 98;
+            this.guna2Panel3.Controls.Add(this.addStaff_btn);
             this.guna2Panel3.Controls.Add(this.lbl_UserName);
             this.guna2Panel3.Controls.Add(this.guna2Button_CaiDat);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
@@ -68,7 +69,6 @@
             this.guna2Panel3.Controls.Add(this.guna2Button_Phim);
             this.guna2Panel3.Controls.Add(this.guna2Button_ThucAnDoUong);
             this.guna2Panel3.Controls.Add(this.guna2Button_DatVe);
-            this.guna2Panel3.Controls.Add(this.guna2Button_RapChieu);
             this.guna2Panel3.CustomizableEdges.BottomLeft = false;
             this.guna2Panel3.CustomizableEdges.BottomRight = false;
             this.guna2Panel3.CustomizableEdges.TopLeft = false;
@@ -80,13 +80,51 @@
             this.guna2Panel3.Size = new System.Drawing.Size(198, 657);
             this.guna2Panel3.TabIndex = 2;
             // 
+            // addStaff_btn
+            // 
+            this.addStaff_btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.addStaff_btn.Animated = true;
+            this.addStaff_btn.AutoRoundedCorners = true;
+            this.addStaff_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
+            this.addStaff_btn.BorderRadius = 21;
+            this.addStaff_btn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.addStaff_btn.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.addStaff_btn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(149)))));
+            this.addStaff_btn.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.addStaff_btn.CheckedState.Image = global::DoAn.Properties.Resources.theater__1_;
+            this.addStaff_btn.CustomizableEdges.BottomRight = false;
+            this.addStaff_btn.CustomizableEdges.TopRight = false;
+            this.addStaff_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addStaff_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addStaff_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addStaff_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addStaff_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
+            this.addStaff_btn.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addStaff_btn.ForeColor = System.Drawing.Color.Linen;
+            this.addStaff_btn.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.addStaff_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(149)))));
+            this.addStaff_btn.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.addStaff_btn.HoverState.Image = global::DoAn.Properties.Resources.theater__1_;
+            this.addStaff_btn.Image = global::DoAn.Properties.Resources.theater;
+            this.addStaff_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addStaff_btn.ImageOffset = new System.Drawing.Point(8, 0);
+            this.addStaff_btn.Location = new System.Drawing.Point(18, 332);
+            this.addStaff_btn.Name = "addStaff_btn";
+            this.addStaff_btn.PressedColor = System.Drawing.Color.White;
+            this.addStaff_btn.Size = new System.Drawing.Size(180, 45);
+            this.addStaff_btn.TabIndex = 11;
+            this.addStaff_btn.Text = "Nhân viên";
+            this.addStaff_btn.TextOffset = new System.Drawing.Point(8, 0);
+            this.addStaff_btn.Click += new System.EventHandler(this.addStaff_btn_Click);
+            // 
             // lbl_UserName
             // 
             this.lbl_UserName.AutoSize = true;
             this.lbl_UserName.BackColor = System.Drawing.Color.Transparent;
             this.lbl_UserName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserName.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_UserName.Location = new System.Drawing.Point(38, 80);
+            this.lbl_UserName.Location = new System.Drawing.Point(40, 72);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(119, 31);
             this.lbl_UserName.TabIndex = 15;
@@ -134,13 +172,14 @@
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = global::DoAn.Properties.Resources.user__2_;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(62, 12);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(66, 12);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 57);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // guna2Button_TrangChu
             // 
@@ -174,7 +213,7 @@
             this.guna2Button_TrangChu.PressedColor = System.Drawing.Color.White;
             this.guna2Button_TrangChu.Size = new System.Drawing.Size(180, 45);
             this.guna2Button_TrangChu.TabIndex = 8;
-            this.guna2Button_TrangChu.Text = "Trang chủ";
+            this.guna2Button_TrangChu.Text = "Thống kê";
             this.guna2Button_TrangChu.TextOffset = new System.Drawing.Point(8, 0);
             this.guna2Button_TrangChu.Click += new System.EventHandler(this.guna2Button_TrangChu_Click);
             // 
@@ -284,6 +323,7 @@
             this.guna2Button_ThucAnDoUong.TabIndex = 10;
             this.guna2Button_ThucAnDoUong.Text = "      Thức ăn và đồ uống";
             this.guna2Button_ThucAnDoUong.TextOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button_ThucAnDoUong.Click += new System.EventHandler(this.guna2Button_ThucAnDoUong_Click);
             // 
             // guna2Button_DatVe
             // 
@@ -314,7 +354,7 @@
             this.guna2Button_DatVe.Image = global::DoAn.Properties.Resources.ticket;
             this.guna2Button_DatVe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button_DatVe.ImageOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button_DatVe.Location = new System.Drawing.Point(18, 332);
+            this.guna2Button_DatVe.Location = new System.Drawing.Point(18, 281);
             this.guna2Button_DatVe.Name = "guna2Button_DatVe";
             this.guna2Button_DatVe.PressedColor = System.Drawing.Color.White;
             this.guna2Button_DatVe.Size = new System.Drawing.Size(180, 45);
@@ -322,43 +362,6 @@
             this.guna2Button_DatVe.Text = "Đặt vé";
             this.guna2Button_DatVe.TextOffset = new System.Drawing.Point(8, 0);
             this.guna2Button_DatVe.Click += new System.EventHandler(this.guna2Button_DatVe_Click);
-            // 
-            // guna2Button_RapChieu
-            // 
-            this.guna2Button_RapChieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button_RapChieu.Animated = true;
-            this.guna2Button_RapChieu.AutoRoundedCorners = true;
-            this.guna2Button_RapChieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.guna2Button_RapChieu.BorderRadius = 21;
-            this.guna2Button_RapChieu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button_RapChieu.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button_RapChieu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(149)))));
-            this.guna2Button_RapChieu.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button_RapChieu.CheckedState.Image = global::DoAn.Properties.Resources.theater__1_;
-            this.guna2Button_RapChieu.CustomizableEdges.BottomRight = false;
-            this.guna2Button_RapChieu.CustomizableEdges.TopRight = false;
-            this.guna2Button_RapChieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button_RapChieu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button_RapChieu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button_RapChieu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button_RapChieu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
-            this.guna2Button_RapChieu.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button_RapChieu.ForeColor = System.Drawing.Color.Linen;
-            this.guna2Button_RapChieu.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button_RapChieu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(149)))));
-            this.guna2Button_RapChieu.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button_RapChieu.HoverState.Image = global::DoAn.Properties.Resources.theater__1_;
-            this.guna2Button_RapChieu.Image = global::DoAn.Properties.Resources.theater;
-            this.guna2Button_RapChieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button_RapChieu.ImageOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button_RapChieu.Location = new System.Drawing.Point(18, 281);
-            this.guna2Button_RapChieu.Name = "guna2Button_RapChieu";
-            this.guna2Button_RapChieu.PressedColor = System.Drawing.Color.White;
-            this.guna2Button_RapChieu.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button_RapChieu.TabIndex = 11;
-            this.guna2Button_RapChieu.Text = "Rạp chiếu";
-            this.guna2Button_RapChieu.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // guna2Panel1
             // 
@@ -423,6 +426,7 @@
             this.panel_Container.Size = new System.Drawing.Size(805, 588);
             this.panel_Container.TabIndex = 4;
             this.panel_Container.UseTransparentBackground = true;
+            this.panel_Container.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Container_Paint);
             // 
             // guna2DragControl1
             // 
@@ -477,7 +481,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button_Phim;
         private Guna.UI2.WinForms.Guna2Button guna2Button_ThucAnDoUong;
         private Guna.UI2.WinForms.Guna2Button guna2Button_DatVe;
-        private Guna.UI2.WinForms.Guna2Button guna2Button_RapChieu;
+        private Guna.UI2.WinForms.Guna2Button addStaff_btn;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
