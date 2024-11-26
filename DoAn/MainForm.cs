@@ -29,6 +29,7 @@ namespace DoAn
 
             
             guna2Button_TrangChu_Click(null, EventArgs.Empty);
+            lbl_UserName.Text = "Hello, " + LogInForm.GlobalVariables.userName;
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -58,6 +59,36 @@ namespace DoAn
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2Button_CaNhan_Click(object sender, EventArgs e)
+        {
+            DialogResult res = guna2MessageDialog1.Show("Bạn chắc chắn muốn đăng xuất chứ?", "Xác nhận");
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+                LogInForm logInForm = new LogInForm();
+                logInForm.Show();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void guna2Button_CaiDat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            addControl(new CaNhan());
         }
     }
 }

@@ -34,7 +34,7 @@ namespace DoAn
             else
             {
                 guna2ProgressBar1.Value++;
-                guna2HtmlLabel_Loading.Text = guna2ProgressBar1.Value.ToString() + "%";
+                guna2HtmlLabel_Loading.Text = "Đang tải..." + guna2ProgressBar1.Value.ToString() + "%";
 
             }
         }

@@ -32,9 +32,9 @@
             this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2HtmlLabel_Loading = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +59,7 @@
             this.guna2HtmlLabel_Loading.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel_Loading.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel_Loading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(179)))), ((int)(((byte)(14)))));
-            this.guna2HtmlLabel_Loading.Location = new System.Drawing.Point(384, 314);
+            this.guna2HtmlLabel_Loading.Location = new System.Drawing.Point(329, 314);
             this.guna2HtmlLabel_Loading.Name = "guna2HtmlLabel_Loading";
             this.guna2HtmlLabel_Loading.Size = new System.Drawing.Size(108, 31);
             this.guna2HtmlLabel_Loading.TabIndex = 2;
@@ -116,8 +116,8 @@
         private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel_Loading;
         private System.Windows.Forms.Timer timer1;
-        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }
