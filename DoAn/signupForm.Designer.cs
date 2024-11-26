@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch_signupForm_ShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.guna2Button_signupForm_Signin = new Guna.UI2.WinForms.Guna2Button();
@@ -47,6 +48,8 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2MessageDialog_Warning = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.guna2MessageDialog_Information = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -56,6 +59,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(30)))), ((int)(((byte)(58)))));
+            this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Controls.Add(this.guna2ToggleSwitch_signupForm_ShowPassword);
             this.guna2Panel2.Controls.Add(this.guna2Button_signupForm_Signin);
@@ -69,6 +73,17 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(297, 450);
             this.guna2Panel2.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(236)))), ((int)(((byte)(130)))));
+            this.label2.Location = new System.Drawing.Point(67, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(160, 31);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Tạo tài khoản";
             // 
             // label1
             // 
@@ -89,6 +104,7 @@
             this.guna2ToggleSwitch_signupForm_ShowPassword.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ToggleSwitch_signupForm_ShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch_signupForm_ShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch_signupForm_ShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ToggleSwitch_signupForm_ShowPassword.Location = new System.Drawing.Point(39, 332);
             this.guna2ToggleSwitch_signupForm_ShowPassword.Name = "guna2ToggleSwitch_signupForm_ShowPassword";
             this.guna2ToggleSwitch_signupForm_ShowPassword.Size = new System.Drawing.Size(35, 20);
@@ -106,6 +122,7 @@
             this.guna2Button_signupForm_Signin.AutoRoundedCorners = true;
             this.guna2Button_signupForm_Signin.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button_signupForm_Signin.BorderRadius = 23;
+            this.guna2Button_signupForm_Signin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button_signupForm_Signin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button_signupForm_Signin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button_signupForm_Signin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -116,7 +133,7 @@
             this.guna2Button_signupForm_Signin.Name = "guna2Button_signupForm_Signin";
             this.guna2Button_signupForm_Signin.Size = new System.Drawing.Size(103, 49);
             this.guna2Button_signupForm_Signin.TabIndex = 10;
-            this.guna2Button_signupForm_Signin.Text = "Sign in ";
+            this.guna2Button_signupForm_Signin.Text = "Đã có tài khoản";
             this.guna2Button_signupForm_Signin.UseTransparentBackground = true;
             this.guna2Button_signupForm_Signin.Click += new System.EventHandler(this.guna2Button_signupForm_Signin_Click);
             // 
@@ -152,6 +169,7 @@
             this.guna2Button_signupForm_Register.AutoRoundedCorners = true;
             this.guna2Button_signupForm_Register.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button_signupForm_Register.BorderRadius = 23;
+            this.guna2Button_signupForm_Register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button_signupForm_Register.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button_signupForm_Register.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button_signupForm_Register.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -162,7 +180,7 @@
             this.guna2Button_signupForm_Register.Name = "guna2Button_signupForm_Register";
             this.guna2Button_signupForm_Register.Size = new System.Drawing.Size(103, 49);
             this.guna2Button_signupForm_Register.TabIndex = 8;
-            this.guna2Button_signupForm_Register.Text = "Register";
+            this.guna2Button_signupForm_Register.Text = "Đăng ký";
             this.guna2Button_signupForm_Register.UseTransparentBackground = true;
             this.guna2Button_signupForm_Register.Click += new System.EventHandler(this.guna2Button_signupForm_Register_Click);
             // 
@@ -221,9 +239,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::DoAn.Properties.Resources.Colorful_Retro_Illustrative_Tasty_Popcorn_Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(81, 31);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(84, 12);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(142, 102);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(135, 83);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
@@ -237,7 +255,7 @@
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this;
+            this.guna2DragControl1.TargetControl = this.guna2Panel2;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // guna2Panel1
@@ -316,6 +334,24 @@
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.Goldenrod;
             this.guna2ShadowForm1.TargetForm = this;
             // 
+            // guna2MessageDialog_Warning
+            // 
+            this.guna2MessageDialog_Warning.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog_Warning.Caption = null;
+            this.guna2MessageDialog_Warning.Icon = Guna.UI2.WinForms.MessageDialogIcon.Warning;
+            this.guna2MessageDialog_Warning.Parent = this;
+            this.guna2MessageDialog_Warning.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.guna2MessageDialog_Warning.Text = null;
+            // 
+            // guna2MessageDialog_Information
+            // 
+            this.guna2MessageDialog_Information.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog_Information.Caption = null;
+            this.guna2MessageDialog_Information.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
+            this.guna2MessageDialog_Information.Parent = this;
+            this.guna2MessageDialog_Information.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.guna2MessageDialog_Information.Text = null;
+            // 
             // signupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -357,5 +393,8 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button_signupForm_Signin;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch_signupForm_ShowPassword;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog_Warning;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog_Information;
+        private System.Windows.Forms.Label label2;
     }
 }
