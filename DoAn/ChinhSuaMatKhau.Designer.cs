@@ -211,6 +211,7 @@
             this.guna2Button_XacNhan.TabIndex = 12;
             this.guna2Button_XacNhan.Text = "Xác nhận";
             this.guna2Button_XacNhan.UseTransparentBackground = true;
+            this.guna2Button_XacNhan.Click += new System.EventHandler(this.guna2Button_XacNhan_Click);
             // 
             // guna2ToggleSwitch_signupForm_ShowPassword
             // 

@@ -31,6 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbl_GioiTinhChecked = new System.Windows.Forms.Label();
+            this.lbl_SDTChecked = new System.Windows.Forms.Label();
+            this.lbl_HoTenChecked = new System.Windows.Forms.Label();
+            this.radioButton_Nu = new System.Windows.Forms.RadioButton();
+            this.radioButton_Nam = new System.Windows.Forms.RadioButton();
             this.guna2Button_LuuThongTin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button_SuaMatKhau = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
@@ -49,8 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2TextBox_HoTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton_Nam = new System.Windows.Forms.RadioButton();
-            this.radioButton_Nu = new System.Windows.Forms.RadioButton();
+            this.guna2MessageDialog_Warning = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +82,9 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.lbl_GioiTinhChecked);
+            this.guna2Panel2.Controls.Add(this.lbl_SDTChecked);
+            this.guna2Panel2.Controls.Add(this.lbl_HoTenChecked);
             this.guna2Panel2.Controls.Add(this.radioButton_Nu);
             this.guna2Panel2.Controls.Add(this.radioButton_Nam);
             this.guna2Panel2.Controls.Add(this.guna2Button_LuuThongTin);
@@ -106,6 +113,72 @@
             this.guna2Panel2.TabIndex = 2;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
+            // lbl_GioiTinhChecked
+            // 
+            this.lbl_GioiTinhChecked.AutoSize = true;
+            this.lbl_GioiTinhChecked.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_GioiTinhChecked.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GioiTinhChecked.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_GioiTinhChecked.Location = new System.Drawing.Point(711, 303);
+            this.lbl_GioiTinhChecked.Name = "lbl_GioiTinhChecked";
+            this.lbl_GioiTinhChecked.Size = new System.Drawing.Size(21, 28);
+            this.lbl_GioiTinhChecked.TabIndex = 39;
+            this.lbl_GioiTinhChecked.Text = "*";
+            // 
+            // lbl_SDTChecked
+            // 
+            this.lbl_SDTChecked.AutoSize = true;
+            this.lbl_SDTChecked.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_SDTChecked.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SDTChecked.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_SDTChecked.Location = new System.Drawing.Point(711, 230);
+            this.lbl_SDTChecked.Name = "lbl_SDTChecked";
+            this.lbl_SDTChecked.Size = new System.Drawing.Size(21, 28);
+            this.lbl_SDTChecked.TabIndex = 38;
+            this.lbl_SDTChecked.Text = "*";
+            // 
+            // lbl_HoTenChecked
+            // 
+            this.lbl_HoTenChecked.AutoSize = true;
+            this.lbl_HoTenChecked.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_HoTenChecked.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_HoTenChecked.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_HoTenChecked.Location = new System.Drawing.Point(711, 89);
+            this.lbl_HoTenChecked.Name = "lbl_HoTenChecked";
+            this.lbl_HoTenChecked.Size = new System.Drawing.Size(21, 28);
+            this.lbl_HoTenChecked.TabIndex = 37;
+            this.lbl_HoTenChecked.Text = "*";
+            // 
+            // radioButton_Nu
+            // 
+            this.radioButton_Nu.AutoSize = true;
+            this.radioButton_Nu.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.radioButton_Nu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_Nu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
+            this.radioButton_Nu.Location = new System.Drawing.Point(519, 302);
+            this.radioButton_Nu.Name = "radioButton_Nu";
+            this.radioButton_Nu.Size = new System.Drawing.Size(60, 32);
+            this.radioButton_Nu.TabIndex = 35;
+            this.radioButton_Nu.TabStop = true;
+            this.radioButton_Nu.Text = "Nữ";
+            this.radioButton_Nu.UseVisualStyleBackColor = true;
+            this.radioButton_Nu.CheckedChanged += new System.EventHandler(this.radioButton_Nu_CheckedChanged);
+            // 
+            // radioButton_Nam
+            // 
+            this.radioButton_Nam.AutoSize = true;
+            this.radioButton_Nam.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.radioButton_Nam.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_Nam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
+            this.radioButton_Nam.Location = new System.Drawing.Point(394, 302);
+            this.radioButton_Nam.Name = "radioButton_Nam";
+            this.radioButton_Nam.Size = new System.Drawing.Size(71, 29);
+            this.radioButton_Nam.TabIndex = 34;
+            this.radioButton_Nam.TabStop = true;
+            this.radioButton_Nam.Text = "Nam";
+            this.radioButton_Nam.UseVisualStyleBackColor = true;
+            this.radioButton_Nam.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // guna2Button_LuuThongTin
             // 
             this.guna2Button_LuuThongTin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -120,6 +193,7 @@
             this.guna2Button_LuuThongTin.Size = new System.Drawing.Size(180, 45);
             this.guna2Button_LuuThongTin.TabIndex = 33;
             this.guna2Button_LuuThongTin.Text = "Lưu thông tin";
+            this.guna2Button_LuuThongTin.Click += new System.EventHandler(this.guna2Button_LuuThongTin_Click);
             // 
             // guna2Button_SuaMatKhau
             // 
@@ -150,7 +224,7 @@
             // 
             this.guna2Separator5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(139)))), ((int)(((byte)(150)))));
-            this.guna2Separator5.Location = new System.Drawing.Point(398, 384);
+            this.guna2Separator5.Location = new System.Drawing.Point(398, 395);
             this.guna2Separator5.Name = "guna2Separator5";
             this.guna2Separator5.Size = new System.Drawing.Size(307, 10);
             this.guna2Separator5.TabIndex = 30;
@@ -196,7 +270,7 @@
             this.guna2TextBox_MaNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox_MaNV.FillColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_MaNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox_MaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
             this.guna2TextBox_MaNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox_MaNV.Location = new System.Drawing.Point(408, 1);
@@ -233,10 +307,10 @@
             this.guna2TextBox_ChucVu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox_ChucVu.FillColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_ChucVu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_ChucVu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox_ChucVu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox_ChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
             this.guna2TextBox_ChucVu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_ChucVu.Location = new System.Drawing.Point(408, 347);
+            this.guna2TextBox_ChucVu.Location = new System.Drawing.Point(408, 358);
             this.guna2TextBox_ChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox_ChucVu.Name = "guna2TextBox_ChucVu";
             this.guna2TextBox_ChucVu.PasswordChar = '\0';
@@ -252,7 +326,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.label6.Location = new System.Drawing.Point(114, 363);
+            this.label6.Location = new System.Drawing.Point(114, 374);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 28);
             this.label6.TabIndex = 22;
@@ -263,7 +337,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.label5.Location = new System.Drawing.Point(114, 298);
+            this.label5.Location = new System.Drawing.Point(114, 302);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 28);
             this.label5.TabIndex = 20;
@@ -282,7 +356,7 @@
             this.guna2TextBox_SDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox_SDT.FillColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_SDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_SDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox_SDT.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox_SDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
             this.guna2TextBox_SDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox_SDT.Location = new System.Drawing.Point(408, 211);
@@ -319,7 +393,7 @@
             this.guna2TextBox_NgayVL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox_NgayVL.FillColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_NgayVL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_NgayVL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox_NgayVL.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox_NgayVL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
             this.guna2TextBox_NgayVL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox_NgayVL.Location = new System.Drawing.Point(408, 139);
@@ -357,7 +431,7 @@
             this.guna2TextBox_HoTen.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox_HoTen.FillColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_HoTen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_HoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox_HoTen.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox_HoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
             this.guna2TextBox_HoTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox_HoTen.Location = new System.Drawing.Point(408, 69);
@@ -381,35 +455,14 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Họ tên";
             // 
-            // radioButton_Nam
+            // guna2MessageDialog_Warning
             // 
-            this.radioButton_Nam.AutoSize = true;
-            this.radioButton_Nam.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.radioButton_Nam.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.radioButton_Nam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
-            this.radioButton_Nam.Location = new System.Drawing.Point(429, 298);
-            this.radioButton_Nam.Name = "radioButton_Nam";
-            this.radioButton_Nam.Size = new System.Drawing.Size(62, 24);
-            this.radioButton_Nam.TabIndex = 34;
-            this.radioButton_Nam.TabStop = true;
-            this.radioButton_Nam.Text = "Nam";
-            this.radioButton_Nam.UseVisualStyleBackColor = true;
-            this.radioButton_Nam.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton_Nu
-            // 
-            this.radioButton_Nu.AutoSize = true;
-            this.radioButton_Nu.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.radioButton_Nu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.radioButton_Nu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
-            this.radioButton_Nu.Location = new System.Drawing.Point(554, 298);
-            this.radioButton_Nu.Name = "radioButton_Nu";
-            this.radioButton_Nu.Size = new System.Drawing.Size(50, 24);
-            this.radioButton_Nu.TabIndex = 35;
-            this.radioButton_Nu.TabStop = true;
-            this.radioButton_Nu.Text = "Nữ";
-            this.radioButton_Nu.UseVisualStyleBackColor = true;
-            this.radioButton_Nu.CheckedChanged += new System.EventHandler(this.radioButton_Nu_CheckedChanged);
+            this.guna2MessageDialog_Warning.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog_Warning.Caption = null;
+            this.guna2MessageDialog_Warning.Icon = Guna.UI2.WinForms.MessageDialogIcon.Warning;
+            this.guna2MessageDialog_Warning.Parent = this;
+            this.guna2MessageDialog_Warning.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.guna2MessageDialog_Warning.Text = null;
             // 
             // CaNhan
             // 
@@ -420,7 +473,9 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CaNhan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CaNhan";
+            this.Load += new System.EventHandler(this.CaNhan_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -454,5 +509,9 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button_SuaMatKhau;
         private System.Windows.Forms.RadioButton radioButton_Nu;
         private System.Windows.Forms.RadioButton radioButton_Nam;
+        private System.Windows.Forms.Label lbl_GioiTinhChecked;
+        private System.Windows.Forms.Label lbl_SDTChecked;
+        private System.Windows.Forms.Label lbl_HoTenChecked;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog_Warning;
     }
 }

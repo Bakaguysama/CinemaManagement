@@ -16,7 +16,7 @@ namespace DoAn
         public static class GlobalVariables
         {
             public static string userName { get; set; } = string.Empty;
-            public static string passWord { get; set; }
+            public static string passWord { get; set; } = string.Empty;
         }
 
         private string connStr = @"Server=LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";

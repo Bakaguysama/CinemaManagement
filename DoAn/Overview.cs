@@ -227,7 +227,7 @@ namespace DoAn
             DataTable data = LoadData(query);
             if (data.Rows.Count > 0)
             {
-                label8.Text = Convert.ToInt32(data.Rows[0]["SOPHIMDANGCHIEU"]).ToString() + "đ";
+                label8.Text = Convert.ToInt32(data.Rows[0]["SOPHIMDANGCHIEU"]).ToString();
             }
             else
             {

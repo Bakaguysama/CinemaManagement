@@ -86,3 +86,26 @@ FROM PHIM
 WHERE TINHTRANG = N'Đang chiếu';
 
 SELECT * FROM PHIM;
+
+--Tìm thông tin cá nhân của nhân viên
+SELECT 
+	tk.MANV,
+	HOTEN,
+	NGAYVL,
+	SDT,
+	GIOITINH,
+	CHUCVU
+FROM TAIKHOAN tk
+JOIN NHANVIEN nv ON tk.MANV = nv.MANV
+WHERE TENTK = 'admin1'
+
+SELECT * FROM TAIKHOAN;
+SELECT * FROM NHANVIEN;
+UPDATE NHANVIEN
+                               SET
+                                    HOTEN = 'Kaguya Shinomiya',
+                                    GIOITINH = N'Nữ',
+                                    SDT = '12345678'
+                               WHERE NHANVIEN.MANV = (SELECT nv.MANV
+                                             FROM NHANVIEN nv JOIN TAIKHOAN tk ON tk.MANV = nv.MANV
+                                             WHERE TENTK = 'kaguya')
