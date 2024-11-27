@@ -166,7 +166,7 @@
             this.circularProgressBar_CongSuatRap.AnimationSpeed = 500;
             this.circularProgressBar_CongSuatRap.BackColor = System.Drawing.Color.Transparent;
             this.circularProgressBar_CongSuatRap.Font = new System.Drawing.Font("Yu Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularProgressBar_CongSuatRap.ForeColor = System.Drawing.Color.Black;
+            this.circularProgressBar_CongSuatRap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
             this.circularProgressBar_CongSuatRap.InnerColor = System.Drawing.Color.White;
             this.circularProgressBar_CongSuatRap.InnerMargin = 2;
             this.circularProgressBar_CongSuatRap.InnerWidth = -1;
