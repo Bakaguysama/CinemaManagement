@@ -96,7 +96,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(156, 138);
+            this.label20.Location = new System.Drawing.Point(101, 127);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(263, 16);
             this.label20.TabIndex = 1;
@@ -105,10 +105,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(142, 15);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(116, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 28);
+            this.label1.Size = new System.Drawing.Size(272, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "PHIM ĐANG CHIẾU";
             // 
@@ -137,6 +137,7 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.label11);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(530, 25);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 591);
@@ -148,7 +149,7 @@
             this.guna2Button2.Animated = true;
             this.guna2Button2.AutoRoundedCorners = true;
             this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 14;
+            this.guna2Button2.BorderRadius = 21;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -156,9 +157,9 @@
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(133, 486);
+            this.guna2Button2.Location = new System.Drawing.Point(142, 481);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(91, 30);
+            this.guna2Button2.Size = new System.Drawing.Size(91, 44);
             this.guna2Button2.TabIndex = 42;
             this.guna2Button2.Text = "LÀM MỚI";
             // 
@@ -167,7 +168,7 @@
             this.guna2Button1.Animated = true;
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 14;
+            this.guna2Button1.BorderRadius = 21;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -175,9 +176,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(25, 486);
+            this.guna2Button1.Location = new System.Drawing.Point(34, 481);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(91, 30);
+            this.guna2Button1.Size = new System.Drawing.Size(91, 44);
             this.guna2Button1.TabIndex = 41;
             this.guna2Button1.Text = "MUA";
             // 
@@ -194,7 +195,7 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(25, 522);
+            this.guna2Button3.Location = new System.Drawing.Point(34, 531);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(199, 30);
             this.guna2Button3.TabIndex = 40;
@@ -205,26 +206,26 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Location = new System.Drawing.Point(102, 288);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 22);
+            this.textBox4.Size = new System.Drawing.Size(127, 30);
             this.textBox4.TabIndex = 39;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label19.Location = new System.Drawing.Point(67, 214);
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(70, 215);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(135, 24);
+            this.label19.Size = new System.Drawing.Size(122, 23);
             this.label19.TabIndex = 37;
             this.label19.Text = "KHÁCH HÀNG";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.Location = new System.Drawing.Point(67, 335);
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(73, 333);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 24);
+            this.label13.Size = new System.Drawing.Size(119, 23);
             this.label13.TabIndex = 4;
             this.label13.Text = "THANH TOÁN";
             // 
@@ -233,36 +234,36 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Location = new System.Drawing.Point(102, 260);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 22);
+            this.textBox3.Size = new System.Drawing.Size(127, 30);
             this.textBox3.TabIndex = 38;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label22.Location = new System.Drawing.Point(52, 286);
+            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(52, 293);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(34, 24);
+            this.label22.Size = new System.Drawing.Size(40, 23);
             this.label22.TabIndex = 31;
             this.label22.Text = "SĐT";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.Location = new System.Drawing.Point(54, 255);
+            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(54, 262);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(32, 24);
+            this.label23.Size = new System.Drawing.Size(36, 23);
             this.label23.TabIndex = 29;
             this.label23.Text = "Tên";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label18.Location = new System.Drawing.Point(53, 15);
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(70, 26);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(157, 28);
+            this.label18.Size = new System.Drawing.Size(127, 23);
             this.label18.TabIndex = 28;
             this.label18.Text = "THÔNG TIN VÉ";
             // 
@@ -271,16 +272,16 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(102, 406);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 22);
+            this.textBox2.Size = new System.Drawing.Size(127, 30);
             this.textBox2.TabIndex = 16;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.Location = new System.Drawing.Point(15, 406);
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(15, 411);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 24);
+            this.label17.Size = new System.Drawing.Size(83, 23);
             this.label17.TabIndex = 15;
             this.label17.Text = "Tiền thừa";
             // 
@@ -289,16 +290,16 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(102, 378);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 22);
+            this.textBox1.Size = new System.Drawing.Size(127, 30);
             this.textBox1.TabIndex = 14;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.Location = new System.Drawing.Point(46, 376);
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(46, 381);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 24);
+            this.label16.Size = new System.Drawing.Size(49, 23);
             this.label16.TabIndex = 13;
             this.label16.Text = "Tổng";
             // 
@@ -309,16 +310,16 @@
             "Danh sách nước uống"});
             this.comboBox4.Location = new System.Drawing.Point(102, 165);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(127, 24);
+            this.comboBox4.Size = new System.Drawing.Size(127, 31);
             this.comboBox4.TabIndex = 12;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label15.Location = new System.Drawing.Point(6, 165);
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 171);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 24);
+            this.label15.Size = new System.Drawing.Size(97, 23);
             this.label15.TabIndex = 11;
             this.label15.Text = "Nước uống";
             // 
@@ -329,16 +330,16 @@
             "Danh sách thức ăn"});
             this.comboBox3.Location = new System.Drawing.Point(102, 135);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(127, 24);
+            this.comboBox3.Size = new System.Drawing.Size(127, 31);
             this.comboBox3.TabIndex = 8;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.Location = new System.Drawing.Point(28, 135);
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(25, 141);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 24);
+            this.label14.Size = new System.Drawing.Size(62, 23);
             this.label14.TabIndex = 7;
             this.label14.Text = "Snacks";
             // 
@@ -349,17 +350,17 @@
             "Danh sách mã ghế ứng với loại ghế còn trống"});
             this.comboBox2.Location = new System.Drawing.Point(102, 103);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(127, 24);
+            this.comboBox2.Size = new System.Drawing.Size(127, 31);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(29, 99);
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(26, 105);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 24);
+            this.label12.Size = new System.Drawing.Size(69, 23);
             this.label12.TabIndex = 2;
             this.label12.Text = "Mã ghế";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -373,16 +374,16 @@
             "Ghế VIP"});
             this.comboBox1.Location = new System.Drawing.Point(102, 69);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(127, 24);
+            this.comboBox1.Size = new System.Drawing.Size(127, 31);
             this.comboBox1.TabIndex = 1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(21, 69);
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(18, 75);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 24);
+            this.label11.Size = new System.Drawing.Size(75, 23);
             this.label11.TabIndex = 0;
             this.label11.Text = "Loại ghế";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -408,40 +409,40 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(233, 32);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(232, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 24);
+            this.label3.Size = new System.Drawing.Size(83, 23);
             this.label3.TabIndex = 1;
             this.label3.Text = "Mã Phim:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(229, 56);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(232, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 24);
+            this.label4.Size = new System.Drawing.Size(84, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Tên Phim:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(235, 80);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(237, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 24);
+            this.label5.Size = new System.Drawing.Size(78, 23);
             this.label5.TabIndex = 3;
             this.label5.Text = "Thể Loại:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(250, 104);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(252, 119);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 24);
+            this.label6.Size = new System.Drawing.Size(63, 23);
             this.label6.TabIndex = 4;
             this.label6.Text = "Giá Vé:";
             // 
@@ -476,7 +477,7 @@
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(295, 160);
+            this.guna2Button4.Location = new System.Drawing.Point(275, 169);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(109, 30);
             this.guna2Button4.TabIndex = 26;
@@ -485,40 +486,40 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(371, 104);
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.Location = new System.Drawing.Point(362, 117);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 24);
+            this.label10.Size = new System.Drawing.Size(67, 23);
             this.label10.TabIndex = 8;
             this.label10.Text = "ABC123";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(373, 80);
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(362, 88);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 24);
+            this.label9.Size = new System.Drawing.Size(67, 23);
             this.label9.TabIndex = 7;
             this.label9.Text = "ABC123";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(371, 56);
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(362, 59);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 24);
+            this.label8.Size = new System.Drawing.Size(67, 23);
             this.label8.TabIndex = 6;
             this.label8.Text = "ABC123";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(371, 32);
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(362, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 24);
+            this.label7.Size = new System.Drawing.Size(67, 23);
             this.label7.TabIndex = 5;
             this.label7.Text = "ABC123";
             // 
