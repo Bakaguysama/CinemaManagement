@@ -13,6 +13,8 @@ namespace DoAn
     public partial class MainForm : Form
     {
         private Overview overviewForm;
+        
+
         public void addControl(Form f)
         {
             panel_Container.Controls.Clear();
@@ -89,6 +91,11 @@ namespace DoAn
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             addControl(new CaNhan());
+        }
+
+        private void guna2Button_Phim_Click(object sender, EventArgs e)
+        {
+            addControl(new Movie());
         }
     }
 }

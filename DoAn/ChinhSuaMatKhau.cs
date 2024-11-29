@@ -74,7 +74,11 @@ namespace DoAn
                                 if (rowsAffected > 0)
                                 {
                                     MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    
+                                    LogInForm.loadMatKhau();
+                                    guna2TextBox_ConfirmNewPW.Clear();
+                                    guna2TextBox_NewPW.Clear();
+                                    guna2TextBox_OldPW.Clear();
+                                    this.Close();
                                 }
                                 else
                                 {

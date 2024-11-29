@@ -275,6 +275,12 @@ namespace DoAn
                 }
             }
         }
+
+        private void guna2Button_XoaTK_Click(object sender, EventArgs e)
+        {
+            XoaTK xoaTK = new XoaTK();
+            xoaTK.Show();
+        }
     }
 }
 

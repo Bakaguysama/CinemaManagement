@@ -121,7 +121,7 @@ namespace DoAn
                                 {
                                     guna2MessageDialog_Information.Show("Tài khoản đã được tạo thành công!","Thông báo");
                                     LogInForm.GlobalVariables.userName = tenTaiKhoan;
-                                    LogInForm.GlobalVariables.passWord = matKhau;
+                                    LogInForm.loadMatKhau();
                                     this.Hide();
                                     LoadingForm loadingForm = new LoadingForm();
                                     loadingForm.Show();

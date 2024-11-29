@@ -82,7 +82,7 @@ namespace DoAn
                         {
                             guna2MessageDialog_Information.Show("Đăng nhập thành công", "Thông báo");
                             GlobalVariables.userName = tenTaiKhoan;
-                            GlobalVariables.passWord = matKhau;
+                            GlobalVariables.passWord = generateMK(tenTaiKhoan);
                             this.Hide();
                             LoadingForm loadingForm = new LoadingForm();
                             loadingForm.Show();
@@ -115,6 +115,56 @@ namespace DoAn
         private void LogInForm_FormClosed(object sender, FormClosedEventArgs e)
         {
 
+        }
+
+        public static string generateMK(string tenTK)
+        {
+            string connectionString = @"Server=LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string query = "SELECT MATKHAU FROM TAIKHOAN WHERE TENTK = @TENTK";
+            string matKhau = string.Empty;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Thêm tham số cho truy vấn
+                        command.Parameters.Add("@TENTK", SqlDbType.NVarChar).Value = tenTK;
+
+                        // Thực thi truy vấn và lấy giá trị mật khẩu
+                        object result = command.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            matKhau = result.ToString(); // Lấy giá trị MATKHAU
+                        }
+                        else
+                        {
+                            matKhau = "Mật khẩu không tồn tại";
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Xử lý lỗi SQL
+                Console.WriteLine($"Lỗi truy vấn SQL: {ex.Message}");
+                matKhau = "Lỗi truy vấn cơ sở dữ liệu";
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi khác
+                Console.WriteLine($"Lỗi hệ thống: {ex.Message}");
+                matKhau = "Lỗi không xác định";
+            }
+
+            return matKhau; // Trả về mật khẩu hoặc thông báo lỗi
+        }
+        public static void loadMatKhau()
+        {
+            GlobalVariables.passWord = generateMK(GlobalVariables.userName);
         }
     }
 }

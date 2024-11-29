@@ -55,6 +55,7 @@
             this.guna2TextBox_HoTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2MessageDialog_Warning = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.guna2Button_XoaTK = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +83,8 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2Panel2.Controls.Add(this.guna2Button_XoaTK);
             this.guna2Panel2.Controls.Add(this.lbl_GioiTinhChecked);
             this.guna2Panel2.Controls.Add(this.lbl_SDTChecked);
             this.guna2Panel2.Controls.Add(this.lbl_HoTenChecked);
@@ -188,9 +191,9 @@
             this.guna2Button_LuuThongTin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
             this.guna2Button_LuuThongTin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2Button_LuuThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.guna2Button_LuuThongTin.Location = new System.Drawing.Point(474, 443);
+            this.guna2Button_LuuThongTin.Location = new System.Drawing.Point(555, 448);
             this.guna2Button_LuuThongTin.Name = "guna2Button_LuuThongTin";
-            this.guna2Button_LuuThongTin.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button_LuuThongTin.Size = new System.Drawing.Size(225, 45);
             this.guna2Button_LuuThongTin.TabIndex = 33;
             this.guna2Button_LuuThongTin.Text = "Lưu thông tin";
             this.guna2Button_LuuThongTin.Click += new System.EventHandler(this.guna2Button_LuuThongTin_Click);
@@ -204,7 +207,7 @@
             this.guna2Button_SuaMatKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
             this.guna2Button_SuaMatKhau.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.guna2Button_SuaMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
-            this.guna2Button_SuaMatKhau.Location = new System.Drawing.Point(100, 443);
+            this.guna2Button_SuaMatKhau.Location = new System.Drawing.Point(265, 448);
             this.guna2Button_SuaMatKhau.Name = "guna2Button_SuaMatKhau";
             this.guna2Button_SuaMatKhau.Size = new System.Drawing.Size(275, 45);
             this.guna2Button_SuaMatKhau.TabIndex = 32;
@@ -259,8 +262,8 @@
             // 
             // guna2TextBox_MaNV
             // 
-            this.guna2TextBox_MaNV.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox_MaNV.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox_MaNV.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2TextBox_MaNV.BorderColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_MaNV.BorderThickness = 0;
             this.guna2TextBox_MaNV.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox_MaNV.DefaultText = "fsègsư";
@@ -270,7 +273,7 @@
             this.guna2TextBox_MaNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox_MaNV.FillColor = System.Drawing.SystemColors.Control;
             this.guna2TextBox_MaNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.guna2TextBox_MaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(143)))), ((int)(((byte)(119)))));
             this.guna2TextBox_MaNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox_MaNV.Location = new System.Drawing.Point(408, 1);
@@ -464,6 +467,22 @@
             this.guna2MessageDialog_Warning.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.guna2MessageDialog_Warning.Text = null;
             // 
+            // guna2Button_XoaTK
+            // 
+            this.guna2Button_XoaTK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button_XoaTK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button_XoaTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button_XoaTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button_XoaTK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
+            this.guna2Button_XoaTK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.guna2Button_XoaTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(55)))), ((int)(((byte)(70)))));
+            this.guna2Button_XoaTK.Location = new System.Drawing.Point(25, 448);
+            this.guna2Button_XoaTK.Name = "guna2Button_XoaTK";
+            this.guna2Button_XoaTK.Size = new System.Drawing.Size(225, 45);
+            this.guna2Button_XoaTK.TabIndex = 40;
+            this.guna2Button_XoaTK.Text = "Xóa tài khoản";
+            this.guna2Button_XoaTK.Click += new System.EventHandler(this.guna2Button_XoaTK_Click);
+            // 
             // CaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -513,5 +532,6 @@
         private System.Windows.Forms.Label lbl_SDTChecked;
         private System.Windows.Forms.Label lbl_HoTenChecked;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog_Warning;
+        private Guna.UI2.WinForms.Guna2Button guna2Button_XoaTK;
     }
 }
