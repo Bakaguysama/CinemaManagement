@@ -16,10 +16,33 @@ namespace DoAn
 {
     public partial class Movie : Form
     {
+        private Dictionary<string, string> MoviePoster;
         public Movie()
         {
             InitializeComponent();
+            SetUpPoster();
         }
+
+        private void SetUpPoster()
+        {
+            // Khởi tạo Dictionary để lưu trữ key và poster
+            MoviePoster = new Dictionary<string, string>();
+
+            // Đọc ảnh từ thư mục Images và lưu vào Dictionary
+            string imagesPath = Path.Combine(Application.StartupPath, "Images");
+
+            if (Directory.Exists(imagesPath))
+            {
+                foreach (string filePath in Directory.GetFiles(imagesPath))
+                {
+                    string fileName = Path.GetFileName(filePath);
+                    MoviePoster[fileName] = filePath; // Lưu tên file và đường dẫn vào Dictionary
+                }
+            }
+        }
+
+
+
 
         private void LoadBangPhim()
         {
@@ -240,7 +263,6 @@ namespace DoAn
             guna2ComboBox_TinhTrang.SelectedIndex = -1;
             guna2TextBox_MoTa.Clear();
             guna2DataGridView2.ClearSelection();
-            guna2PictureBox1.Image = null;
         }
 
         private bool kiemTraPhim(string maphim, SqlConnection conn)
@@ -463,33 +485,11 @@ namespace DoAn
             }
         }
 
+        // Hàm thêm ảnh vào thư mục MovieImages và lưu vào Dictionary
         private void btn_ThemAnh_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Title = "Chọn ảnh để tải lên",
-                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif",
-                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
-            };
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    // Hiển thị ảnh trong PictureBox
-                    guna2PictureBox1.Image = Image.FromFile(openFileDialog.FileName);
-
-                    // Đặt kích thước ảnh trong PictureBox
-                    guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Stretch ảnh cho vừa với PictureBox
-                }
-                catch (Exception ex)
-                {
-                    // Thông báo lỗi khi không thể tải ảnh
-                    MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
         }
-
         private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

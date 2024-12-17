@@ -14,7 +14,7 @@ namespace DoAn
         }
 
         // Kết nối cơ sở dữ liệu
-        private readonly string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+        private readonly string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
 
         // Tải dữ liệu sản phẩm từ bảng SANPHAM
         private void LoadFoodData()

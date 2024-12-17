@@ -19,7 +19,7 @@ namespace DoAn
             public static string passWord { get; set; } = string.Empty;
         }
 
-        private string connStr = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+        private string connStr = @"Server=LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
         public LogInForm()
         {
             InitializeComponent();

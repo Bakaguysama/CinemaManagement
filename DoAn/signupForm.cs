@@ -15,7 +15,7 @@ namespace DoAn
     {
         
 
-        private static string connStr = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+        private static string connStr = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
 
         public signupForm()
         {

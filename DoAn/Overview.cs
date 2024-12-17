@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Collections;
+using System.Data.SqlTypes;
+using Guna.UI2.WinForms;
 
 namespace DoAn
 {
@@ -17,13 +19,13 @@ namespace DoAn
     {
         private SqlConnection conn; // Kết nối toàn cục
         private const int MaxRetryAttempts = 3; // Số lần thử lại tối đa
-        private DateTime defaultDate = new DateTime(2024, 12, 31);
-
+        public DateTime defaultDate;
 
         public Overview()
         {
             InitializeComponent();
             ConfigureBarChart();
+            defaultDate = new DateTime(2025, 1, 4);
         }
 
         string convertDate(DateTime dt)
@@ -95,8 +97,8 @@ namespace DoAn
             chart1.ChartAreas[0].AxisY.LabelStyle.TruncatedLabels = false;
             // Thêm tiêu đề cho biểu đồ
             chart1.Titles.Clear();
-            chart1.Titles.Add("Top 5 phim có doanh thu cao nhất");
-            chart1.Titles[0].Font = new System.Drawing.Font("Segoe UI", 14, System.Drawing.FontStyle.Bold);
+            chart1.Titles.Add("Các phim có doanh thu cao nhất trong tuần");
+            chart1.Titles[0].Font = new System.Drawing.Font("Segoe UI", 15, System.Drawing.FontStyle.Bold);
         }
 
         private void Overview_Load(object sender, EventArgs e)
@@ -117,6 +119,7 @@ namespace DoAn
             hienthiSoPhimDangChieu();
             hienthiSoVe(date);
             hienthiChart(date);
+            HienThiDoanhThuChart(date);
         }
 
         private void hienthiChart(string date)
@@ -183,8 +186,8 @@ namespace DoAn
 
                     // Thêm tiêu đề cho biểu đồ
                     chart1.Titles.Clear();
-                    chart1.Titles.Add("Các phim có doanh thu cao nhất trong tuần vừa qua");
-                    chart1.Titles[0].Font = new Font("Segoe UI", 12, FontStyle.Bold);
+                    chart1.Titles.Add("Các phim có doanh thu cao nhất trong tuần");
+                    chart1.Titles[0].Font = new Font("Segoe UI", 15, FontStyle.Bold);
                 }
                 else
                 {
@@ -280,6 +283,9 @@ namespace DoAn
 
         private void hienthiCongSuatRap(string date)
         {
+            DateTime dt;
+            dt = DateTime.Parse(date);
+            string formattedDate = dt.ToString("yyyy-MM-dd");
             string query = @"WITH TIMTONGSOGHE AS
                             (
 	                            SELECT 
@@ -297,9 +303,9 @@ namespace DoAn
 	                            WHERE NGAYHD = @date
                             )
 
-                            SELECT COALESCE(CAST (TONGSOGHEDANGDUOCDUNG AS FLOAT) / CAST (TONGSOGHE AS FLOAT) * 100, 0) AS HIEUSUAT
+                            SELECT COALESCE(CAST (TONGSOGHEDANGDUOCDUNG AS FLOAT) / CAST (TONGSOGHE AS FLOAT) * 10000, 0) AS HIEUSUAT
                             FROM TIMTONGSOGHE, TIMTONGSOGHEDANGDUOCDUNG;";
-            DataTable data = LoadDataWithParameters(query, new SqlParameter("@date", date));
+            DataTable data = LoadDataWithParameters(query, new SqlParameter("@date", formattedDate));
             if (data.Rows.Count > 0)
             {
                 int res = Convert.ToInt32(data.Rows[0]["HIEUSUAT"]);
@@ -315,7 +321,7 @@ namespace DoAn
 
         private void TryConnectToDatabase()
         {
-            string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
             int attempt = 0;
             bool isConnected = false;
 
@@ -357,7 +363,10 @@ namespace DoAn
             guna2Button_TuyChinh.Checked = false; // Tắt nút TuyChinh
             guna2Button_OK.Visible = false; // Ẩn nút OK
 
-            HienThi("2024-12-31");
+            string today = DateTime.Today.ToString("yyyy-MM-dd");
+
+            // Gọi hàm HienThi với ngày hôm nay
+            HienThi(today);
         }
 
         private void Overview_FormClosed(object sender, FormClosedEventArgs e)
@@ -385,7 +394,6 @@ namespace DoAn
         private void guna2Button_OK_Click(object sender, EventArgs e)
         {
             defaultDate = guna2DateTimePicker1.Value;
-
             HienThi(convertDate(defaultDate));
 
         }
@@ -410,7 +418,92 @@ namespace DoAn
 
         private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
+            defaultDate = guna2DateTimePicker1.Value;
+        }
 
+        private void HienThiDoanhThuChart(string date)
+        {
+            DateTime endDate = DateTime.Parse(date);
+            DateTime startDate = endDate.AddDays(-7);
+
+            // Tạo truy vấn tối ưu cho 7 ngày
+            string query = @"
+                            WITH TIMDOANHTHUPHIM AS
+                            (
+                                SELECT 
+                                    hd.NGAYHD,
+                                    SUM(SOVE * GIAVE) AS DOANHTHUp
+                                FROM VEXEMPHIM vxp
+                                JOIN CTHD_VXP cthd_vxp ON cthd_vxp.MAVE = vxp.MAVE
+                                JOIN HOADON hd ON hd.SOHD = cthd_vxp.MAVE
+                                WHERE hd.NGAYHD BETWEEN @startDate AND @endDate
+                                GROUP BY hd.NGAYHD
+                            ),
+                            TIMDOANHTHUSANPHAM AS
+                            (
+                                SELECT 
+                                    hd.NGAYHD,
+                                    SUM(SOSP * GIA) AS DOANHTHUsp
+                                FROM SANPHAM sp
+                                JOIN CTHD_SP cthd_sp ON cthd_sp.MASP = sp.MASP
+                                JOIN HOADON hd ON hd.SOHD = cthd_sp.SOHD
+                                WHERE hd.NGAYHD BETWEEN @startDate AND @endDate
+                                GROUP BY hd.NGAYHD
+                            )
+                            SELECT 
+                                COALESCE(PHIM.NGAYHD, SP.NGAYHD) AS NGAYHD,
+                                COALESCE(SUM(PHIM.DOANHTHUp), 0) + COALESCE(SUM(SP.DOANHTHUsp), 0) AS TONGDOANHTHU
+                            FROM 
+                                (SELECT NGAYHD, SUM(DOANHTHUp) AS DOANHTHUp FROM TIMDOANHTHUPHIM GROUP BY NGAYHD) AS PHIM
+                            FULL JOIN 
+                                (SELECT NGAYHD, SUM(DOANHTHUsp) AS DOANHTHUsp FROM TIMDOANHTHUSANPHAM GROUP BY NGAYHD) AS SP
+                            ON PHIM.NGAYHD = SP.NGAYHD
+                            GROUP BY COALESCE(PHIM.NGAYHD, SP.NGAYHD)
+                            ORDER BY NGAYHD;";
+
+            // Thêm tham số cho truy vấn
+            DataTable data = LoadDataWithParameters(query,
+                new SqlParameter("@startDate", startDate.ToString("yyyy-MM-dd")),
+                new SqlParameter("@endDate", endDate.ToString("yyyy-MM-dd")));
+
+            // Vẽ biểu đồ
+            chart2.Series.Clear();
+            Series series = new Series("Doanh Thu 7 Ngày");
+            series.ChartType = SeriesChartType.SplineArea;  
+            series.BorderWidth = 4;
+            series.BackGradientStyle = GradientStyle.LeftRight;
+            series.BackSecondaryColor = Color.FromArgb(64, 196, 234);
+            series.BorderColor = Color.Fuchsia;
+            series.XValueType = ChartValueType.DateTime;
+
+            // Thêm dữ liệu từ DataTable vào biểu đồ
+            foreach (DataRow row in data.Rows)
+            {
+                DateTime ngay = Convert.ToDateTime(row["NGAYHD"]);
+                double doanhThu = Convert.ToDouble(row["TONGDOANHTHU"]);
+                DataPoint point = new DataPoint();
+                point.SetValueXY(ngay.ToString("dd/MM"), doanhThu);
+                point.ToolTip = $"Ngày: {ngay:dd/MM}\nDoanh thu: {doanhThu:N0} VND"; // Hiển thị chi tiết
+
+                series.Points.Add(point);
+            }
+            series.IsValueShownAsLabel = true;
+            series.LabelFormat = "{0:N0}";
+            series.MarkerStyle = MarkerStyle.Circle;
+            series.MarkerSize = 5;
+            series.MarkerColor = Color.FromArgb(229, 16, 64);
+            // Thêm series vào chart
+            chart2.Series.Add(series);
+            chart2.ChartAreas[0].AxisX.Title = "Ngày";
+            chart2.ChartAreas[0].AxisY.Title = "Doanh thu (VND)";
+            chart2.Titles.Clear();
+            chart2.Titles.Add("Doanh thu trong tuần");
+            chart2.Titles[0].Font = new Font("Segoe UI", 15, FontStyle.Bold);
+        }
+
+        private void chart2_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -43,8 +43,6 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbl_DangKy = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -66,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.label1.Location = new System.Drawing.Point(95, 283);
+            this.label1.Location = new System.Drawing.Point(95, 309);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 20);
             this.label1.TabIndex = 12;
@@ -81,7 +79,7 @@
             this.guna2ToggleSwitch_signupForm_ShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch_signupForm_ShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch_signupForm_ShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ToggleSwitch_signupForm_ShowPassword.Location = new System.Drawing.Point(39, 283);
+            this.guna2ToggleSwitch_signupForm_ShowPassword.Location = new System.Drawing.Point(39, 309);
             this.guna2ToggleSwitch_signupForm_ShowPassword.Name = "guna2ToggleSwitch_signupForm_ShowPassword";
             this.guna2ToggleSwitch_signupForm_ShowPassword.Size = new System.Drawing.Size(35, 20);
             this.guna2ToggleSwitch_signupForm_ShowPassword.TabIndex = 11;
@@ -105,7 +103,7 @@
             this.guna2Button_signupForm_Signin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button_signupForm_Signin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button_signupForm_Signin.ForeColor = System.Drawing.Color.White;
-            this.guna2Button_signupForm_Signin.Location = new System.Drawing.Point(39, 322);
+            this.guna2Button_signupForm_Signin.Location = new System.Drawing.Point(39, 364);
             this.guna2Button_signupForm_Signin.Name = "guna2Button_signupForm_Signin";
             this.guna2Button_signupForm_Signin.Size = new System.Drawing.Size(229, 49);
             this.guna2Button_signupForm_Signin.TabIndex = 10;
@@ -129,7 +127,7 @@
             this.guna2TextBox_signupForm_Password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox_signupForm_Password.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox_signupForm_Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_signupForm_Password.Location = new System.Drawing.Point(39, 218);
+            this.guna2TextBox_signupForm_Password.Location = new System.Drawing.Point(39, 244);
             this.guna2TextBox_signupForm_Password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox_signupForm_Password.Name = "guna2TextBox_signupForm_Password";
             this.guna2TextBox_signupForm_Password.PasswordChar = '●';
@@ -154,7 +152,7 @@
             this.guna2TextBox_signupForm_Username.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox_signupForm_Username.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox_signupForm_Username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox_signupForm_Username.Location = new System.Drawing.Point(39, 162);
+            this.guna2TextBox_signupForm_Username.Location = new System.Drawing.Point(39, 188);
             this.guna2TextBox_signupForm_Username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox_signupForm_Username.Name = "guna2TextBox_signupForm_Username";
             this.guna2TextBox_signupForm_Username.PasswordChar = '\0';
@@ -217,7 +215,7 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::DoAn.Properties.Resources.Colorful_Retro_Illustrative_Tasty_Popcorn_Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(84, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(84, 38);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(135, 83);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,8 +233,6 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(30)))), ((int)(((byte)(58)))));
             this.guna2Panel2.Controls.Add(this.label3);
-            this.guna2Panel2.Controls.Add(this.lbl_DangKy);
-            this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Controls.Add(this.guna2ToggleSwitch_signupForm_ShowPassword);
             this.guna2Panel2.Controls.Add(this.guna2Button_signupForm_Signin);
@@ -252,37 +248,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(236)))), ((int)(((byte)(130)))));
-            this.label3.Location = new System.Drawing.Point(38, 111);
+            this.label3.Location = new System.Drawing.Point(12, 136);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 31);
+            this.label3.Size = new System.Drawing.Size(266, 38);
             this.label3.TabIndex = 15;
             this.label3.Text = "Chào mừng trở lại!";
-            // 
-            // lbl_DangKy
-            // 
-            this.lbl_DangKy.AutoSize = true;
-            this.lbl_DangKy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_DangKy.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DangKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(224)))), ((int)(((byte)(35)))));
-            this.lbl_DangKy.Location = new System.Drawing.Point(165, 388);
-            this.lbl_DangKy.Name = "lbl_DangKy";
-            this.lbl_DangKy.Size = new System.Drawing.Size(112, 20);
-            this.lbl_DangKy.TabIndex = 14;
-            this.lbl_DangKy.Text = "Đăng ký tại đây";
-            this.lbl_DangKy.Click += new System.EventHandler(this.lbl_DangKy_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.label2.Location = new System.Drawing.Point(35, 388);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 20);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Chưa có tài khoản?";
             // 
             // guna2Elipse1
             // 
@@ -370,8 +342,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbl_DangKy;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog_Warning;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog_Information;
         private System.Windows.Forms.Label label3;

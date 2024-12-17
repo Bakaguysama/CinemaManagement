@@ -17,7 +17,7 @@ namespace DoAn
 
         private void LoadStaffData()
         {
-            string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
             string query = "SELECT * FROM NHANVIEN";
 
             try
@@ -75,7 +75,7 @@ namespace DoAn
                 return;
             }
 
-            string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -179,7 +179,7 @@ namespace DoAn
             }
 
             // Kết nối tới cơ sở dữ liệu
-            string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
 
             // Kiểm tra xem nhân viên có tồn tại trong cơ sở dữ liệu không
             string queryCheckEmployee = "SELECT MANV FROM NHANVIEN WHERE MANV = @MANV";
@@ -278,7 +278,7 @@ namespace DoAn
 
         private void LoadEmployeeDetails(string employeeId)
         {
-            string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -345,7 +345,7 @@ namespace DoAn
 
         private void DeleteEmployee(string employeeId)
         {
-            string connectionString = @"Server=MSI;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
+            string connectionString = @"Server =LAPTOP-89L8K8TI\HUYVU;Database=CINEMAMANAGEMENT;Trusted_Connection=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -389,6 +389,11 @@ namespace DoAn
         }
 
         private void DanhSachNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

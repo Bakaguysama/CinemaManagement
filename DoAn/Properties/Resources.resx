@@ -148,6 +148,9 @@
   <data name="menu-bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="person" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,8 +199,8 @@
   <data name="search-interface-symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search-interface-symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="leader2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\leader2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="employees" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,17 +214,17 @@
   <data name="Black_and_Beige_Cute_Aesthetic_Studio_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black and Beige Cute Aesthetic Studio Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="employees (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employees (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Black_And_Red_Minimalist_Movie_Instagram_Post__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black And Red Minimalist Movie Instagram Post (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="leader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="person" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Spin@1x-1.0s-200px-200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spin@1x-1.0s-200px-200px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,28 +232,43 @@
   <data name="ticket (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ticket (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fast-food" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fast-food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Black_And_Red_Minimalist_Movie_Instagram_Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black And Red Minimalist Movie Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Spin@1x-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Spin@1x-1.0s-200px-200px1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search-interface-symbol (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search-interface-symbol (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-interface-symbol (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search-interface-symbol (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clapperboard (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clapperboard (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Black_And_Red_Minimalist_Movie_Instagram_Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Black And Red Minimalist Movie Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Spin@1x-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spin@1x-1.0s-200px-200px1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Spin@1x-1.0s-200px-200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Spin@1x-1.0s-200px-200px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fast-food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fast-food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leader2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leader2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="check-mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check-mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="employees (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employees (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dashboard (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboard (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search-interface-symbol (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-interface-symbol (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

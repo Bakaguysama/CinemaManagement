@@ -45,7 +45,7 @@
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(186)))), ((int)(((byte)(187)))));
             this.guna2Separator1.Location = new System.Drawing.Point(75, 72);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(312, 35);
+            this.guna2Separator1.Size = new System.Drawing.Size(349, 35);
             this.guna2Separator1.TabIndex = 27;
             // 
             // label5
