@@ -308,12 +308,12 @@ namespace DoAn
                 return;
             }
 
-            string maGhe = cmbGhe.SelectedItem.ToString();
-            if (string.IsNullOrEmpty(maGhe))
+            if (cmbGhe.SelectedItem == null || string.IsNullOrEmpty(cmbGhe.SelectedItem.ToString()))
             {
-                MessageBox.Show("Mã ghế không hợp lệ. Vui lòng chọn lại ghế.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng chọn suất chiếu và ghế.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            string maGhe = cmbGhe.SelectedItem.ToString();
 
             // Lấy giá vé từ bảng VEXEMPHIM
             decimal giaVe = GetGiaVe(maGhe);  // Hàm GetGiaVe sẽ truy vấn giá vé dựa trên mã ghế
@@ -370,7 +370,7 @@ namespace DoAn
             decimal tienTra = 0;
             if (!decimal.TryParse(txtTienTra.Text, out tienTra))
             {
-                MessageBox.Show("Vui lòng nhập số tiền trả hợp lệ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập số tiền khách hàng đã trả.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -465,6 +465,8 @@ namespace DoAn
                     txtTenKhachHang.Text = string.Empty;
                     txtSoDienThoai.Text = string.Empty;
                     soHoaDon = string.Empty;
+                    textBox_SoLuongNuoc.Text = "";
+                    textBox_SoLuongSnacks.Text = "";
                     tongTien = 0;
                     tempMoney = 0;
                 }
@@ -997,6 +999,8 @@ namespace DoAn
             cmbSnacks.SelectedIndex = -1;
             lbl_SLSnackConLai.Text = "";
             lbl_SLNuocConLai.Text = "";
+            textBox_SoLuongNuoc.Text = "";
+            textBox_SoLuongSnacks.Text = "";
             tongTien = 0;
             tempMoney = 0;
         }
