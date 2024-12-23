@@ -465,6 +465,7 @@ namespace DoAn
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            guna2DataGridView2.Rows.Clear();
                             LoadBangPhim();
                         }
                         else
