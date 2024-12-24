@@ -26,6 +26,7 @@ namespace DoAn
             InitializeComponent();
             ConfigureBarChart();
             defaultDate = new DateTime(2025, 1, 4);
+            guna2DateTimePicker1.Value = DateTime.Now;
         }
 
         string convertDate(DateTime dt)
@@ -363,6 +364,7 @@ namespace DoAn
             guna2Button_TuyChinh.Checked = false; // Tắt nút TuyChinh
             guna2Button_OK.Visible = false; // Ẩn nút OK
 
+            guna2DateTimePicker1.Value = DateTime.Now;
             string today = DateTime.Today.ToString("yyyy-MM-dd");
 
             // Gọi hàm HienThi với ngày hôm nay

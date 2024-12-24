@@ -397,5 +397,17 @@ namespace DoAn
         {
 
         }
+
+        private void btn_LamMoi_Click(object sender, EventArgs e)
+        {
+            HoTen.Clear();
+            GioiTinh.SelectedIndex = -1;
+            ChucVu.SelectedIndex = -1;
+            Luong.Clear();
+            TenDangNhap.Clear();
+            MatKhau.Clear();
+            SDT.Clear();
+            DanhSachNhanVien.ClearSelection();
+        }
     }
 }
