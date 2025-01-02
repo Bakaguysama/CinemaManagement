@@ -28,7 +28,6 @@ namespace DoAn
             InitializeComponent();
             guna2Button_TrangChu.Checked = true;
 
-            
             guna2Button_TrangChu_Click(null, EventArgs.Empty);
             lbl_UserName.Text = "Hello, " + LogInForm.GlobalVariables.userName;
         }
@@ -156,12 +155,14 @@ namespace DoAn
         private void MainForm_Load(object sender, EventArgs e)
         {
             string chucvu = getChucVuNV();
-            if (chucvu == "Quản Lí")
+            if (chucvu.Trim().Equals("Quản Lí", StringComparison.OrdinalIgnoreCase))
             {
                 guna2Button_RapChieu.Visible = true;
             }
             else
+            {
                 guna2Button_RapChieu.Visible = false;
+            }
         }
 
         private void guna2ControlBox2_Click_1(object sender, EventArgs e)

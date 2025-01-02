@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DanhSachSanPham = new System.Windows.Forms.Panel();
             this.foodDataGridView = new System.Windows.Forms.DataGridView();
             this.TimSanPham = new System.Windows.Forms.TextBox();
@@ -55,6 +55,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.refresh_Button = new Guna.UI2.WinForms.Guna2Button();
             this.DanhSachSanPham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foodDataGridView)).BeginInit();
             this.panel12.SuspendLayout();
@@ -74,23 +75,23 @@
             // foodDataGridView
             // 
             this.foodDataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.foodDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.foodDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.foodDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.foodDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.foodDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.foodDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.foodDataGridView.Location = new System.Drawing.Point(0, 0);
             this.foodDataGridView.Name = "foodDataGridView";
@@ -99,6 +100,7 @@
             this.foodDataGridView.Size = new System.Drawing.Size(1018, 658);
             this.foodDataGridView.TabIndex = 1;
             this.foodDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.foodDataGridView_CellClick);
+            this.foodDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.foodDataGridView_CellContentClick);
             // 
             // TimSanPham
             // 
@@ -147,6 +149,7 @@
             // 
             // LoaiUpdate
             // 
+            this.LoaiUpdate.Enabled = false;
             this.LoaiUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LoaiUpdate.FormattingEnabled = true;
             this.LoaiUpdate.Items.AddRange(new object[] {
@@ -183,6 +186,7 @@
             this.TenSanPhamUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.TenSanPhamUpdate.Location = new System.Drawing.Point(136, 98);
             this.TenSanPhamUpdate.Name = "TenSanPhamUpdate";
+            this.TenSanPhamUpdate.ReadOnly = true;
             this.TenSanPhamUpdate.Size = new System.Drawing.Size(141, 30);
             this.TenSanPhamUpdate.TabIndex = 45;
             // 
@@ -203,7 +207,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(189, 44);
             this.guna2Button1.TabIndex = 40;
-            this.guna2Button1.Text = "CẬP NHẬT";
+            this.guna2Button1.Text = "CẬP NHẬT GIÁ";
             this.guna2Button1.Click += new System.EventHandler(this.BtnCapNhatGia_Click);
             // 
             // label1
@@ -365,11 +369,32 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // refresh_Button
+            // 
+            this.refresh_Button.Animated = true;
+            this.refresh_Button.AutoRoundedCorners = true;
+            this.refresh_Button.BackColor = System.Drawing.Color.Transparent;
+            this.refresh_Button.BorderRadius = 19;
+            this.refresh_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.refresh_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.refresh_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.refresh_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.refresh_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(49)))), ((int)(((byte)(61)))));
+            this.refresh_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.refresh_Button.ForeColor = System.Drawing.Color.White;
+            this.refresh_Button.Location = new System.Drawing.Point(23, 62);
+            this.refresh_Button.Name = "refresh_Button";
+            this.refresh_Button.Size = new System.Drawing.Size(130, 40);
+            this.refresh_Button.TabIndex = 53;
+            this.refresh_Button.Text = "LÀM MỚI";
+            this.refresh_Button.Click += new System.EventHandler(this.refresh_Button_Click);
+            // 
             // Food
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1372, 799);
+            this.Controls.Add(this.refresh_Button);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TimSanPham);
@@ -419,5 +444,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button refresh_Button;
     }
 }

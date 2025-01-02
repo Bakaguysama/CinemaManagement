@@ -125,7 +125,7 @@
             this.lbl_UserName.BackColor = System.Drawing.Color.Transparent;
             this.lbl_UserName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserName.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_UserName.Location = new System.Drawing.Point(56, 112);
+            this.lbl_UserName.Location = new System.Drawing.Point(50, 112);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(146, 38);
             this.lbl_UserName.TabIndex = 15;

@@ -231,6 +231,7 @@ namespace DoAn
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Thông tin nhân viên đã được cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadStaffData();
                 }
                 else
                 {

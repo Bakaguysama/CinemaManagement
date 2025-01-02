@@ -174,7 +174,7 @@ namespace DoAn
                 // Nếu sản phẩm chưa tồn tại, thêm mới sản phẩm
                 string loaiSanPham = Loai.SelectedItem.ToString();
 
-                string insertProductQuery = "INSERT INTO SANPHAM (MASP, TENSP, LOAI, GIA) VALUES (@MASP, @TENSP, @LOAI, @GIA)";
+                string insertProductQuery = "INSERT INTO SANPHAM (MASP, TENSP, LOAI, GIA, SOLUONG) VALUES (@MASP, @TENSP, @LOAI, @GIA, @SOLUONG)";
 
                 try
                 {
@@ -188,7 +188,7 @@ namespace DoAn
                         insertCommand.Parameters.AddWithValue("@TENSP", TenSanPham.Text);
                         insertCommand.Parameters.AddWithValue("@LOAI", loaiSanPham);
                         insertCommand.Parameters.AddWithValue("@GIA", gia); // Lấy giá từ ô Gia
-
+                        insertCommand.Parameters.AddWithValue("@SOLUONG", int.Parse(SoLuong.Text));
                         insertCommand.ExecuteNonQuery();
                     }
                 }
@@ -233,13 +233,21 @@ namespace DoAn
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            LamMoiNhap();
             LoadFoodData();
         }
 
         private string GenerateNewProductId()
         {
-            string newProductId = "SP" + Guid.NewGuid().ToString("N").Substring(0, 3); // Lấy 5 ký tự đầu từ GUID
+            // Lấy số dòng hiện tại, loại trừ dòng trống cuối nếu cần (AllowUserToAddRows = true)
+            int rowCount = foodDataGridView.AllowUserToAddRows ? foodDataGridView.Rows.Count - 1 : foodDataGridView.Rows.Count;
+
+            // Tăng thêm 1 để tạo ID mới (nếu dựa trên số hiện có)
+            int nextIdNumber = rowCount + 1;
+
+            // Tạo ID dạng SP00x
+            string newProductId = "SP" + nextIdNumber.ToString("D3");
+
             return newProductId;
         }
 
@@ -303,6 +311,7 @@ namespace DoAn
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             LoadFoodData();
+            LamMoiUpdate();
         }
 
         private void foodDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -312,12 +321,39 @@ namespace DoAn
                 string tenSanPham = foodDataGridView.Rows[e.RowIndex].Cells["TENSP"].Value.ToString();
                 string loaiSanPham = foodDataGridView.Rows[e.RowIndex].Cells["LOAI"].Value.ToString();
                 decimal giaSanPham = Convert.ToDecimal(foodDataGridView.Rows[e.RowIndex].Cells["GIA"].Value);
-
+                giaSanPham = Convert.ToInt32(giaSanPham);
                 TenSanPhamUpdate.Text = tenSanPham;
                 LoaiUpdate.SelectedItem = loaiSanPham; 
-                GiaUpdate.Text = giaSanPham.ToString("C"); 
+                GiaUpdate.Text = giaSanPham.ToString(); 
             }
         }
 
+        private void LamMoiUpdate()
+        {
+            TenSanPhamUpdate.Clear();
+            LoaiUpdate.SelectedIndex = -1;
+            GiaUpdate.Clear();
+        }
+
+        private void LamMoiNhap()
+        {
+            TenSanPham.Clear();
+            Loai.SelectedIndex = -1;
+            SoLuong.Clear();
+            Gia.Clear();
+            foodDataGridView.ClearSelection();
+        }
+
+        private void refresh_Button_Click(object sender, EventArgs e)
+        {
+            LamMoiUpdate();
+            LamMoiNhap();
+            foodDataGridView.ClearSelection();
+        }
+
+        private void foodDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
